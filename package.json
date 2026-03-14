@@ -1,8 +1,15 @@
 {
   "name": "esp-easy-cmd",
   "version": "0.1.0",
-  "main": "index.ts",
   "type": "module",
+  "main": "index.ts",
+
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+
   "dependencies": {
     "mqtt": "^5.7.2"
   }
