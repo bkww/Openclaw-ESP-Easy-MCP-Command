@@ -1,0 +1,27 @@
+{
+  "id": "esp-easy-cmd",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "brokerUrl": {
+        "type": "string",
+        "default": "mqtt://202.118.188.17:1883"
+      },
+      "devices": {
+        "type": "array",
+        "default": [],
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "sysname": { "type": "string" },
+            "cmdTopic": { "type": "string" },
+            "defaultPin": { "type": "number" }
+          },
+          "required": ["id"]
+        }
+      }
+    }
+  }
+}
